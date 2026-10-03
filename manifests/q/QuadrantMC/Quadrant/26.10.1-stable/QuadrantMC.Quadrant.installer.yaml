@@ -1,0 +1,24 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: QuadrantMC.Quadrant
+PackageVersion: 26.10.1-stable
+InstallerType: nullsoft
+Scope: user
+InstallerSwitches:
+  Upgrade: /UPDATE
+Protocols:
+- quadrantnext
+- modrinth
+- curseforge
+ProductCode: Quadrant
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/QuadrantMC/quadrant/releases/download/v26.10.1-stable/Quadrant_26.10.1-stable_x64-setup.exe
+  InstallerSha256: 335770B58104AAA665300AAD776805C546C1272EA7630A6B7E61371381FB9771
+- Architecture: arm64
+  InstallerUrl: https://github.com/QuadrantMC/quadrant/releases/download/v26.10.1-stable/Quadrant_26.10.1-stable_arm64-setup.exe
+  InstallerSha256: D82262F54B93C652920F0C832A388C28D6AC5F7771F1B2D04E71F092415DE709
+ManifestType: installer
+ManifestVersion: 1.12.0
+ReleaseDate: 2026-10-03
